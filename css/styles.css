@@ -1,0 +1,398 @@
+
+/* On importe nos deux polices d'écritures */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 90px;
+}
+
+section.top-page {
+    background: url('/images/nos_ingredient/burger-banner.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: rgb(255, 255, 255);
+    font-size:  120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.big-title:hover {
+    color: #1e0f7ed5;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 750px;
+    margin-left: 30px;
+}
+
+.horraire:hover{
+    color: black;
+}
+
+.accueil:hover{
+    color: black;
+
+}
+.ventes:hover{
+    color: black;
+}
+
+.nosplats:hover{
+    color: black;
+}
+
+.ingre:hover{
+    color: black;
+}
+
+.reserv:hover{
+    color: black;
+}
+
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #1e0f7e;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #000000;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* best sells */
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #1e0f7e;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+}
+
+/* MEILLEURES VENTES ------ */
+.best-plants {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.plant1 {
+    background-image: url(/images/nos_burger/burger1.jpg);
+}
+
+.plant2 {
+    background-image: url(/images/nos_burger/frites4.jpg);
+}
+
+.plant3 {
+    background-image: url(/images/nos_burger/Tiramisu.jpg);
+}
+
+.plant4 {
+    background-image: url(/images/nos_burger/menu6.jpg);
+}
+
+.plant-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.plant-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+/* Couleurs du prix des burgers */
+.plant-price {
+    color: #1e0f7ed2;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* nos plantes */
+
+.all-plants {
+    margin: 100px;
+}
+
+.plant-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+}
+
+/* Nos meilleurs ventes */
+.plant-grid1 {
+    background-image: url(/images/nos_burger/burger1.jpg);
+    grid-column: 1/3;   
+    grid-row: 1/3;
+}
+
+.plant-grid2 {
+    background-image: url(/images/nos_burger/wrap.png);
+    grid-column: 3/5;
+}
+
+.plant-grid3 {
+    background-image: url(/images/nos_burger/phylis.png);
+    grid-column: 3/5;
+}
+
+/* Divers */
+
+.plant-grid4 {
+    background-image: url(/images/nos_burger/veggie2.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.plant-grid5 {
+    background-image: url(/images/nos_burger/pizza.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.plant-grid6 {
+    background-image: url(/images/nos_burger/poisson.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* Partie nos Ingrédients  */
+
+.ingredient {
+    margin: 100px;
+}
+
+.textingredient {
+    font-size: 25px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+
+footer{
+     background-color: #000000ff;
+     position: relative;
+     width: 100%;
+     min-height: 350px;
+     padding: 3rem 1rem;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    min-width: 250px;
+    color:#f2f2f2f2;
+    font-family: poppins;
+    padding:0 2rem;
+}
+.col .logo{
+    width: 100px;
+    margin-bottom:25px;
+}
+
+/* Couleurs de service / liens etc  */
+.col h3{
+    color:#fda47ea1;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+/* Effet de couleur ( Bleu Ipssi ) */
+.col h3::after{
+    content: '';
+    height:3px;
+    width:0px;
+    background-color: #1e0f7e;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+    width:30px
+}
+
+/* Couleurs réseaux  */
+.col .social a i{
+    color:#fda47ea1;
+    margin-top:2rem;
+    margin-right: 5px;
+    transition: 0.3s ease;
+}
+.col .social a i:hover{
+    transform: scale(1.5);
+    filter:grayscale(25);
+}
+.col .links a{
+    display: block;
+    text-decoration: none;
+    color:#f2f2f2;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 0.3s ease;
+}
+.col .links a::before{
+    content:'';
+    height: 16px;
+    width:3px;
+    position: absolute;
+    top:5px;
+    left:-10px;
+    background-color: #1e0f7e;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.col .links a:hover::before{
+    opacity: 1;
+}
+.col .links a:hover{
+    transform: translateX(-8px);
+    color:#fda47ea1;
+}
+.col .contact-details{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.col .contact-details i{
+    margin-right:15px;
+}
+.row .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 0;
+}
+/* Champ mail */
+.row .form input{
+    background-color: #1a1c20ff;
+    border:0;
+    outline:none;
+    padding:14px 20px;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* btn mail */
+.form button{
+    padding:14px 20px;
+    border:0;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #fda47ea1;
+}
+  
